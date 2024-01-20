@@ -10,3 +10,13 @@ for output in layer_outputs:
     exp_values.append(E ** output) # ** - power operator in Python
     print('exponentiated values:')
     print(exp_values)
+
+#normalize the sum of exp values 
+norm_base=sum(exp_values) 
+norm_values=[]
+
+for value in exp_values:
+    norm_values.append(value/norm_base)
+print('normal exponentiated values')
+print(norm_values)
+print('sum of the norm values', sum(norm_values))
